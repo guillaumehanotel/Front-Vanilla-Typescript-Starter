@@ -1,0 +1,26 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "airbnb-base",
+        "prettier",
+        "plugin:wc/recommended",
+        "plugin:lit/recommended"
+    ],
+    "settings": {
+        "wc": {
+            "elementBaseClasses": ["LitElement"] // Recognize `LitElement` as a Custom Element base class
+        }
+    },
+    "plugins": ["prettier"],
+    "parserOptions": {
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "rules": {
+//        "no-console": "off",
+        "no-param-reassign": "off"
+    }
+}
